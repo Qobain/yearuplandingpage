@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.back-img {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+}
+
+.banner{
+        width: 100%;
+        height: 100%;
+        background-image: url(background.jpg);
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .overlay{ 
+        background: linear-gradient(white,black);
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        position: absolute;
+        opacity: 83%;
+     }
+
+     .navbar{
+        width: 100%;
+        margin: auto;
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(253, 249, 249);
+        z-index: 1;
+        
+     }
+     
+     .logo{
+        width: 120px ;
+        cursor: pointer ;
+     }
+
+     .navbar ul li {
+         list-style: none;
+         display: block;
+         float: left;
+         margin: 0 30px;
+         font-size: large;
+         justify-content: space-between;
+         position: relative;
+         }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color:rgb(19, 16, 190);
+            text-transform: uppercase;
+        }
+    
+        .navbar ul li::after {
+            content:'';
+            height: 3px;
+            width:0;
+            background:rgb(20, 74, 221);
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        .navbar ul li:hover::after {
+            width:100%;
+        }
+
+    .content {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        /* top: 20%; */
+        outline: 1px magenta solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5em;
+    }
+
+    .content img {
+        /* height: 100%; */
+    }
+
+    .content h1 {
+        font-size: 70px;
+        margin-top: 100;
+        color: aliceblue;
+    }
+
+    .content p{
+        margin:20px auto;
+        font-weight: 150;
+        line-height: 30px;
+        font-size: large;
+        color:aliceblue;
+    }
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0004ff;
+    background: transparent;
+    color:rgb(238, 255, 0);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background:rgb(3, 69, 248);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+
+}
+ button:hover{ 
+    border: none;
+ }
+
